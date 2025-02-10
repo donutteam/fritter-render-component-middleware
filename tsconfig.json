@@ -1,0 +1,18 @@
+{
+	"extends": "@donutteam/typescript-config",
+	"compilerOptions":
+	{
+		"rootDir": "./src",
+		"outDir": "./build",
+
+		"lib":
+		[
+			"DOM", // Note: Needed because document-builder uses HTMLElement in one place, for client code
+			"ESNext",
+		],
+	},
+	"include":
+	[
+		"./src/**/*.ts",
+	],
+}
