@@ -12,10 +12,10 @@ import * as Fritter from "@donutteam/fritter";
 export type ComponentFunction<ComponentFunctionOptions> = (options: ComponentFunctionOptions) => DE;
 
 export type GetOptionsFunction<ComponentFunctionOptions, BaseFritterContext extends Fritter.FritterContext = Fritter.FritterContext> =
-	(
-		context : MiddlewareFritterContext<ComponentFunctionOptions, BaseFritterContext>,
-		options : Partial<ComponentFunctionOptions>,
-	) => ComponentFunctionOptions;
+(
+	context: MiddlewareFritterContext<ComponentFunctionOptions, BaseFritterContext>,
+	options: Partial<ComponentFunctionOptions>,
+) => ComponentFunctionOptions;
 
 export type RenderComponentFunction<ComponentFunctionOptions> = (options: Partial<ComponentFunctionOptions>) => void;
 
